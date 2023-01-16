@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.businessCardPicture {
+  width: 360px;
+  height: 200px;
+  position: absolute;
+  top: 10px;
+  background: black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.businessCardPicture .insideContainer {
+  border: 1px solid white;
+  width: 90%;
+  height: 90%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 15rem;
+  margin: auto;
+  width: 350px;
+  /* width: 100%; */
+  background-color: white;
+  color: #677788;
+  padding: 15px 15px;
+  border-radius: 20px;
+  box-shadow: -1px -1px 2px rgba(58, 58, 58, 0.15);
+  border: 0.2px solid rgba(58, 58, 58, 0.15);
+}
+
+.container:hover {
+  box-shadow: 2px 4px 8px rgba(10, 10, 10, 0.15);
+ }
+
+.BusinessCardImage {
+  width: 95px;
+  height: 95px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  /* background-color: #83489b; */
+}
+
+.BusinessCardImage img {
+  height: 95px;
+  width: 95px;
+}
+
+.editImage {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #00d179;
+  top: 5.2rem;
+  right: 8rem;
+}
+
+.content {
+  width: 100%;
+}
+
+form .user-details .input-box {
+  margin: auto;
+  margin-bottom: 10px;
+  width: 100%;
+
+}
+
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  padding-left: 20px;
+  border: 0.2px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.buttons {
+  /* background-color: #2d3748; */
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 30px;
+}
+
+form .button {
+  display: inline-block;
+  height: 40px;
+  width: 100px;
+}
+
+form .button input {
+  height: 90%;
+  width: 100%;
+  padding: 0 10px;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #00d179;
+  margin: 0 8px 0 8px;
+  margin-bottom: 10px;
+}
+
+form .button input:hover {
+  transform: scale(0.99);
+  background: linear-gradient(-135deg, #a9bacc, #03804c);
+}
+
+/* #input {
+  font-size: 12px;
+  font-weight: 300;
+  color: #677788;
+
+}
+
+select {
+  position: relative;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  border-top: none;
+  padding: 5px;
+  max-height: 10rem;
+  overflow-y: auto;
+}
+
+option {
+  background-color: white;
+  padding: 4px;
+  margin-bottom: 1px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+option:hover,
+.active {
+  background-color: lightblue;
+} */
+
+@media (max-width: 200px) {
+
+
+  .BusinessCardImage {
+    width: 47.5px;
+    height: 47.5px;
+  }
+  .BusinessCardImage img{
+    width: 47px;
+    height: 47px;
+  }
+
+  .container {
+    padding: 0px 0px;
+  }
+
+  .user-details .input-box input {
+    height: 15px;
+    width: 70%;
+    outline: none;
+    font-size: 12px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding-left: 10px;
+    border: 0.2px solid #ccc;
+    border-bottom-width: 1px;
+    transition: all 0.3s ease;
+  }
+
+  .input-box .details {
+    font-size: 12px;
+  }
+
+  .input-box .icon {
+    height: 15px;
+    width: 70%;
+  }
+
+  .icon-f {
+    height: 20px;
+    width: 20px;
+  }
+
+
+  .buttons {
+    margin-top: 0px;
+  }
+
+  form .button input {
+    margin: auto;
+    width: 30px;
+    height: 15px;
+    font-size: 5px;
+    padding-left: 2px;
+  }
+
+  form .category label .dot {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 2.5px solid transparent;
+  }
+
+}
+
+/* Multiselect */
+.mult-select-tag {
+  display: flex;
+  width:100%;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-color: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  --border-color: rgb(218, 221, 224);
+  font-family: Verdana, sans-serif;
+}
+
+.mult-select-tag .wrapper {
+  width: 100%;
+}
+
+.mult-select-tag .body {
+  display: flex;
+  border: 1px solid var(--border-color);
+  background: white;
+  min-height: 2.15rem;
+  width:100%;
+  min-width: 14rem;
+
+}
+
+.mult-select-tag .input-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  padding: 0.1rem;
+}
+
+.mult-select-tag .input-body {
+  display: flex;
+  width: 100%;
+}
+
+.mult-select-tag .input {
+  flex:1;
+  background: transparent;
+  border-radius: 0.25rem;
+  padding: 0.45rem;
+  margin: 10px;
+  color: #2d3748;
+  outline: 0;
+  border: 1px solid var(--border-color);
+}
+
+.mult-select-tag .btn-container {
+  color: #e2eBf0;
+  padding: 0.5rem;
+  display: flex;
+  border-left: 1px solid var(--border-color);
+}
+
+.mult-select-tag button {
+  cursor: pointer;
+  width: 100%;
+  color: #718096;
+  outline: 0;
+  height: 100%;
+  border: none;
+  padding: 0;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  text-transform: none;
+  margin: 0;
+}
+
+.mult-select-tag button:first-child {
+  width: 1rem;
+  height: 90%;
+}
+
+
+.mult-select-tag .drawer {
+  position: absolute;
+  background: white;
+  max-height: 15rem;
+  z-index: 40;
+  top: 98%;
+  width: 100%;
+  overflow-y: scroll;
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+}
+
+.mult-select-tag ul {
+  list-style-type: none;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.mult-select-tag ul li {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.mult-select-tag ul li:hover {
+  background: rgb(243 244 246);
+}
+
+.mult-select-tag .item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2c7a7b;
+  padding: 0.2rem 0.4rem;
+  margin: 0.2rem;
+  font-weight: 500;
+  border: 1px solid #81e6d9;
+  background: #e6fffa;
+  border-radius: 9999px;
+}
+
+.mult-select-tag .item-label {
+  max-width: 100%;
+  line-height: 1;
+  font-size: 0.75rem;
+  font-weight: 400;
+  flex: 0 1 auto;
+  color: #2c7a7b;
+}
+
+.mult-select-tag .item-close-container {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row-reverse;
+}
+
+.mult-select-tag .item-close-svg {
+  width: 1rem;
+  margin-left: 0.5rem;
+  height: 1rem;
+  cursor: pointer;
+  border-radius: 9999px;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.mult-select-tag .shadow  {
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.mult-select-tag .rounded {
+  border-radius: .375rem;
+}
+
+.contactSavedOverlay { 
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.contactSaved {
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 24px;
+  border: 0.1px solid rgba(58, 58, 58, 0.15);
+  box-shadow: -1px -1px 2px rgba(58, 58, 58, 0.15);
+  top: calc(50% - 5rem);
+  left: calc(50% - 12rem);
+}
+
+.contactSaved img {
+  position: absolute;
+  top: 25px;
+}
+
+.contactSaved span {
+  position: absolute;
+  top: calc(100% - 7.8rem);
+  font-size: 22px;
+}
+
+.contactSaved .btns {
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* background-color: #2d3748; */
+}
+
+.btns button {
+  /* display: inline-block; */
+  height: 40px;
+  width: max-content;
+  padding: 0 15px;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #00d179;
+  margin: 0 8px 0 8px;
+}

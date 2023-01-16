@@ -10,11 +10,11 @@
     /* 	Size is a variable for both - height and width dimensions of the circle  */
     --size: 150px;
     /* 	First Color Value */
-    --clrFirstSpin: lightpink;
+    --clrFirstSpin: #00d179;
     /* 	Second Color Value */
-    --clrSecondSpin: aqua;
+    --clrSecondSpin: #5febb0;
     /* 	Third Color Value */
-    --clrThirdSpin: purple;
+    --clrThirdSpin: #d0f3e4;
     /* 	Duration for text blinking animation  */
     --displayingTextTime: 2500ms;
     --spinnerFont: calc(var(--size)/10);
@@ -463,6 +463,11 @@ input[type=reset] {}
     text-transform: none;
     animation: displaying-text var(--displayingTextTime) ease-in-out infinite;
     color: #fff;
+}
+
+.spinner p img {
+    width: 40px;
+    height: 40px;
 }
 
 @keyframes displaying-text {

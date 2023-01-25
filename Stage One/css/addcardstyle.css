@@ -40,7 +40,7 @@ body {
     align-items: center;
 }
 
-.businessCardContainer {
+.addbusinesscard_outercontainer .businessCardContainer {
     position: absolute;
     width: 429px;
     height: 544px;
@@ -51,7 +51,7 @@ body {
     align-items: center;
 }
 
-.businessCardContainer .workspace {
+.addbusinesscard_outercontainer .businessCardContainer .workspace {
     height: 300px;
     width: 400px;
     display: block;
@@ -60,18 +60,18 @@ body {
     position: absolute;
 }
 
-.businessCardContainer img {
+.addbusinesscard_outercontainer .businessCardContainer img {
     display: block;
     height: 300px;
     width: 400px;
     opacity: 0;
 }
 
-.businessCardContainer.show img {
+.addbusinesscard_outercontainer .businessCardContainer.show img {
     opacity: 1;
 }
 
-#addbusinesscardbtn {
+.addbusinesscard_outercontainer #addbusinesscardbtn {
     bottom: 20px;
     position: absolute;
     width: 148px;
@@ -82,7 +82,7 @@ body {
     border: none;
 }
 
-#open {
+.addbusinesscard_outercontainer #open {
     bottom: 20px;
     position: absolute;
     width: 148px;
@@ -95,18 +95,18 @@ body {
     transition: 0.4s;
 }
 
-#open.hidden {
+.addbusinesscard_outercontainer #open.hidden {
     opacity: 0;
 }
 
-.resetAndSubmit {
+.addbusinesscard_outercontainer .resetAndSubmit {
     bottom: 20px;
     position: absolute;
     display: none;
     transition: 1s;
 }
 
-.resetAndSubmit input {
+.addbusinesscard_outercontainer .resetAndSubmit input {
     width: 148px;
     height: 32px;
     background: #00D179;
@@ -115,7 +115,7 @@ body {
     border: none;
 }
 
-#resetimage {
+.addbusinesscard_outercontainer #resetimage {
     width: 148px;
     height: 32px;
     background: #00D179;
@@ -124,13 +124,11 @@ body {
     border: none;
 }
 
-input[type=reset] {}
-
-.resetAndSubmit.show {
+.addbusinesscard_outercontainer .resetAndSubmit.show {
     display: block;
 }
 
-.modal-container {
+.addbusinesscard_outercontainer .modal-container {
     position: fixed;
     opacity: 0;
     pointer-events: none;
@@ -144,13 +142,13 @@ input[type=reset] {}
     transition: all 0.6s ease;
 }
 
-.modal-container.show {
+.addbusinesscard_outercontainer .modal-container.show {
     pointer-events: auto;
     opacity: 1;
 }
 
 
-.container {
+.addbusinesscard_outercontainer .container {
     background-color: white;
     position: relative;
     width: 750px;
@@ -161,7 +159,7 @@ input[type=reset] {}
     overflow: hidden;
 }
 
-.container .heading {
+.addbusinesscard_outercontainer  .container .heading {
     position: relative;
     top: 30px;
     left: 20px;
@@ -169,7 +167,7 @@ input[type=reset] {}
     font-size: 1.2rem;
 }
 
-.close {
+.addbusinesscard_outercontainer  .close {
     position: absolute;
     right: 20px;
     top: 20px;
@@ -178,12 +176,12 @@ input[type=reset] {}
     opacity: 0.8;
 }
 
-.close:hover {
+.addbusinesscard_outercontainer .close:hover {
     opacity: 1;
 }
 
-.close:before,
-.close:after {
+.addbusinesscard_outercontainer  .close:before,
+.addbusinesscard_outercontainer  .close:after {
     position: absolute;
     left: 15px;
     content: ' ';
@@ -192,16 +190,16 @@ input[type=reset] {}
     background-color: #333;
 }
 
-.close:before {
+.addbusinesscard_outercontainer .close:before {
     transform: rotate(45deg);
 }
 
-.close:after {
+.addbusinesscard_outercontainer  .close:after {
     transform: rotate(-45deg);
 }
 
 /* image area and preview */
-.image-container {
+.addbusinesscard_outercontainer .image-container {
     position: relative;
     top: 50px;
     display: flex;
@@ -213,7 +211,7 @@ input[type=reset] {}
     background-color: black;
 }
 
-.image-workspace {
+.addbusinesscard_outercontainer .image-workspace {
     width: 100%;
     height: 100%;
     display: flex;
@@ -225,13 +223,13 @@ input[type=reset] {}
     overflow: hidden;
 }
 
-.container .img {
+.addbusinesscard_outercontainer .container .img {
     height: 100%;
     width: 100%;
     display: block;
 }
 
-.preview-container {
+.addbusinesscard_outercontainer .preview-container {
     border: 1px solid rgba(0, 0, 0, 0.239);
     border-radius: 2px;
     position: absolute;
@@ -248,12 +246,12 @@ input[type=reset] {}
     background-color: rgb(241, 240, 236);
 }
 
-.img-preview {
+.addbusinesscard_outercontainer  .img-preview {
     width: 130px;
     height: 130px;
 }
 
-.preview-cover {
+.addbusinesscard_outercontainer  .preview-cover {
     overflow: hidden;
     border: 1px solid rgba(0, 0, 0, 0.239);
     background-color: white;
@@ -262,13 +260,13 @@ input[type=reset] {}
     border-radius: 50%;
 }
 
-.preview-container span {
+.addbusinesscard_outercontainer .preview-container span {
     font-size: 12px;
     margin: 10px;
 }
 
 /* action button */
-.action-button {
+.addbusinesscard_outercontainer .action-button {
     /* display: inline-block; */
     width: 100%;
     position: absolute;
@@ -278,29 +276,29 @@ input[type=reset] {}
     /* border-right: 1px solid rgba(27, 27, 27, 0.239); */
 }
 
-.btn-grp {
+.addbusinesscard_outercontainer .btn-grp {
     position: relative;
     top: 10px;
 }
 
-.save_close {
+.addbusinesscard_outercontainer  .save_close {
     position: relative;
     float: right;
     top: 40px;
 }
 
-.action-button .closed {
+.addbusinesscard_outercontainer .action-button .closed {
     background-color: #00D179 !important;
     color: white !important;
 }
 
-.action-button .camera {
+.addbusinesscard_outercontainer .action-button .camera {
     display: none !important;
 }
 
-.action-button .upload,
-.action-button .closed,
-.action-button .reset {
+.addbusinesscard_outercontainer .action-button .upload,
+.addbusinesscard_outercontainer .action-button .closed,
+.addbusinesscard_outercontainer .action-button .reset {
     display: block;
     display: flex;
     justify-content: center;
@@ -320,25 +318,25 @@ input[type=reset] {}
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.action-button .upload:hover,
-.action-button .reset:hover {
+.addbusinesscard_outercontainer .action-button .upload:hover,
+.addbusinesscard_outercontainer .action-button .reset:hover {
     opacity: 0.4;
     color: rgb(36, 36, 36);
     border: 1px solid rgb(36, 36, 36);
 }
 
-.action-button .closed:hover {
+.addbusinesscard_outercontainer .action-button .closed:hover {
     background-color: #025733 !important;
 }
 
-.action-button .upload:active,
-.action-button .closed:active,
-.action-button .reset:active {
+.addbusinesscard_outercontainer .action-button .upload:active,
+.addbusinesscard_outercontainer  .action-button .closed:active,
+.addbusinesscard_outercontainer .action-button .reset:active {
     border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 /* bottom control */
-.bottom-control {
+.addbusinesscard_outercontainer .bottom-control {
     width: 100%;
     position: absolute;
     bottom: 85px;
@@ -350,15 +348,15 @@ input[type=reset] {}
 }
 
 /* .bottom-control .drag-mode, */
-.bottom-control .zoom,
-.bottom-control .rotate,
-.bottom-control .flip {
+.addbusinesscard_outercontainer .bottom-control .zoom,
+.addbusinesscard_outercontainer .bottom-control .rotate,
+.addbusinesscard_outercontainer .bottom-control .flip {
     display: inline-block;
     width: 160px;
     height: 90px;
 }
 
-.bottom-control span {
+.addbusinesscard_outercontainer  .bottom-control span {
     display: block;
     position: relative;
     text-align: center;
@@ -368,7 +366,7 @@ input[type=reset] {}
     display: none;
 }
 
-.bottom-control li {
+.addbusinesscard_outercontainer .bottom-control li {
     position: relative;
     /* left: 20px; */
     list-style: none;
@@ -376,7 +374,7 @@ input[type=reset] {}
     padding-left: 20px;
 }
 
-.bottom-control li svg {
+.addbusinesscard_outercontainer  .bottom-control li svg {
     position: relative;
     display: inline;
     height: 32px;
@@ -390,14 +388,14 @@ input[type=reset] {}
 
 }
 
-.bottom-control li svg:active {
+.addbusinesscard_outercontainer .bottom-control li svg:active {
     fill: #1c5ace;
     border: 0.2px solid #1c5ace;
 }
 
 /* Spinner */
 
-.spinnerContainer {
+.addbusinesscard_outercontainer .spinnerContainer {
     width: 100vw;
     height: 100vh;
     justify-content: center;
@@ -406,7 +404,7 @@ input[type=reset] {}
     display: none;
 }
 
-.spinner {
+.addbusinesscard_outercontainer .spinner {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -420,7 +418,7 @@ input[type=reset] {}
 
 }
 
-.spinner-area {
+.addbusinesscard_outercontainer .spinner-area {
     border: 5px solid transparent;
     position: absolute;
     width: 100%;
@@ -440,32 +438,32 @@ input[type=reset] {}
     }
 }
 
-.spinner-third {
+.addbusinesscard_outercontainer  .spinner-third {
     border-top-color: var(--clrThirdSpin);
     --duration: 1.5s;
     --timing: ease-in;
 }
 
-.spinner-second {
+.addbusinesscard_outercontainer .spinner-second {
     border-left-color: var(--clrSecondSpin);
     --duration: 2s;
     --timing: ease-in
 }
 
-.spinner-first {
+.addbusinesscard_outercontainer  .spinner-first {
     border-bottom-color: var(--clrFirstSpin);
     --duration: 3s;
     --timing: ease-in-out
 }
 
-.spinner p {
+.addbusinesscard_outercontainer  .spinner p {
     font-size: var(--spinnerFont);
     text-transform: none;
     animation: displaying-text var(--displayingTextTime) ease-in-out infinite;
     color: #fff;
 }
 
-.spinner p img {
+.addbusinesscard_outercontainer  .spinner p img {
     width: 40px;
     height: 40px;
 }
